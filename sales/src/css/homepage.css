@@ -1,0 +1,362 @@
+body {
+    font-family: "Times New Roman", "Microsoft YaHei", "黑体", "宋体", sans-serif !important;
+}
+
+.container-fluid,
+.container,
+.container-fluid .container {
+    padding: 0;
+}
+/*滚动条*/
+
+* {
+    scrollbar-base-color: rgb(223, 243, 250);
+    scrollbar-face-color: rgb(151, 194, 225);
+    scrollbar-3dlight-color: rgb(223, 243, 250);
+    scrollbar-shadow-color: rgb(223, 243, 250);
+    scrollbar-highlight-color: rgb(223, 243, 250);
+    scrollbar-darkshadow-color: rgb(223, 243, 250);
+    scrollbar-arrow-color: rgb(223, 243, 250);
+    scrollbar-track-color: rgb(223, 243, 250);
+}
+/*滚动条整体*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    /*滚动条宽度*/
+}
+/*滚动条按钮*/
+
+::-webkit-scrollbar-button {}
+
+::-webkit-scrollbar-track {
+    background-color: #F3F3F3;
+    /*滑道全部*/
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #DFF3FA;
+    /*滑道*/
+    
+    -webkit-border-radius: 4px;
+    /*滑道圆角宽度*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #97C2E1;
+    /*滑动条表面*/
+    
+    border: solid 1px #C0C0C0;
+    /*滑动条边框*/
+    
+    border-radius: 4px;
+    /*滑动条圆角宽度*/
+}
+/*横竖滚动条交角*/
+
+::-webkit-scrollbar-corner {
+    background-color: #F3F3F3;
+}
+/*横竖滚动条交角图案*/
+
+::-webkit-resizer {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+/*鼠标滑过滑动条*/
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #F3F3E0;
+}
+
+#header {
+    height: 50px;
+    background-color: #20699D;
+}
+
+#header .content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header .logo {
+    background: url(../assets/img/logo-bg.png);
+    width: 500px;
+    height: 50px;
+    padding-top: 12px;
+    float: left;
+}
+.total {
+        width: 440px;
+    height: 50px;
+    padding-top: 12px;
+    float: left;
+    margin-left: 230px;
+}
+.total span{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+    line-height: 30px; 
+    float: left;
+    padding-right: 20px;
+
+}
+.logo img {
+    padding-left: 2px;
+    margin-top: -10px;
+    width: 36px;
+}
+
+.logo span {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+    line-height: 30px;
+}
+.content .nav-tabs.nav-justified {
+    width: 300px;
+    float: left;
+    margin-top: 9px
+}
+
+.content a {
+    color: #000;
+}
+.total a {
+    color: #fff;
+}
+.total a:hover {
+    color: #000;
+}
+.logo a {
+    color: #fff;
+}
+.logo a:hover {
+    color: #000;
+}
+.content a:hover {
+    color: #000;
+}
+
+.tab-content {}
+
+.home-conatiner {}
+
+.header-data {
+    font-size: 14px;
+}
+
+.header-data span {
+    color: #ED6476
+}
+
+.header-data a {
+    color: gray;
+    text-decoration: none;
+}
+
+.app-container {
+    margin-top: 20px;
+}
+
+.app-container .row {
+    border-bottom: 2px solid #ddd;
+}
+
+.app-container .app-bg {
+    width: 146px;
+    height: 39px;
+    padding-top: 6px;
+    background: url(../assets/img/nav-bg.png);
+    float: left;
+}
+
+.app-container .app-bg img {
+    margin-left: 6px;
+    margin-top: -3px;
+}
+
+.app-container .app-bg span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.app-container .btn-group {
+    float: right;
+}
+/*details*/
+
+.details-tab a {
+    color: black;
+}
+
+.selectpage {
+    margin-top: -100px;
+}
+
+.pagination li {
+    margin-left: 2px;
+}
+
+.export {
+    z-index: 800;
+    right: 0px;
+    top: 200px;
+    position: fixed;
+    cursor: pointer;
+}
+
+/*与右上方日期选择器有关*/
+em,
+small {
+    color: #000;
+}
+
+.datepicker-div {
+    float: right;
+    color: #fff;
+    margin: 18px 20px 0px 0px;
+}
+
+.datepicker-div input {
+    border: 0;
+    background: none transparent scroll repeat 0% 0%;
+    position: absolute;
+    color: #fff;
+    z-index: -1000;
+    top: 0;
+    width: 50px;
+    visibility: hidden;
+}
+
+.datepicker-div table {
+    margin: 0 auto;
+}
+
+.rank-pieChart1-box,
+.rank-pieChart2-box {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.rank-pieChart1-title,
+.rank-pieChart2-title,
+.rank-barChart1-title {
+    font-size: 18px;
+    -webkit-border-radius: 12px;
+    background: #d9edf7;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.rank-barChart1-box {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.loading-div {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    width: 100%;
+    height: 1500px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 250px 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.loading-div i {
+    color: #A8A8B7;
+    margin-bottom: 20px;
+}
+
+.chart-data {
+    margin-top: 56px;
+}
+.serise-data{
+    width: 200px;
+    background-color: white;
+    height: 400px;
+    box-shadow: 0 -2px 0 #d06300,2px 0 2px #dcdcdc,-2px 0 2px #dcdcdc,0 2px 2px #dcdcdc;
+    border: solid 1px #cecece;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.boder2px{
+        border-bottom: solid 2px #ff0000;
+}
+.div-height-serise{
+    height: 100px
+}
+.list-fontSize{
+    font-size: 16px；
+
+}
+.list-fontSize .item{
+    float: left;
+    width: 89px;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    padding-left: 10px;
+    word-break: break-all;
+
+}
+.div400px1{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 145px;
+    overflow: hidden;
+    margin: 0 14px 14px 0;
+    background-color: #cce1f5;
+}
+.div400px2{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 145px;
+    overflow: hidden;
+    margin: 0 14px 14px 0;
+    background-color: #dfe8bf;
+}
+.div400px3{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 14px 14px 0;
+    /*background-color: #cce1f5;*/
+}
+a{
+    color: white
+}
+a:hover{
+    color: white
+}
+.username-td{
+    width: 80px;
+    text-align: right;
+}
+.login-div{
+        margin-left: 400px;
+    margin-top: 50px;
+}
+.order-list{
+    background-color: rgba(177, 208, 8, 0.15);
+    height: 140px;
+}

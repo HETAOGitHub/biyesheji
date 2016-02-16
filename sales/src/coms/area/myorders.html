@@ -1,0 +1,95 @@
+<div style="    margin-top: 60px;">
+  <span style="font-size: 16px;
+    color: gray;
+">我的订单</span>
+<!-- 订单信息 -->
+<div style="overflow:scroll;height: 600px">
+    <div style="    height: 870px;background-color: white;padding: 10px;">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">全部订单</a></li>
+        <li role="presentation"><a href="#">待付款</a></li>
+        <li role="presentation"><a href="#">待收货</a></li>
+        <li role="presentation"><a href="#">待评价</a></li>
+      </ul>
+      <div class="" ng-repeat="orderdata in orderdatas">
+        <table class="table order-list" style="    margin-left: 10px;width: 50%;">
+          <tr>
+            <td>
+              <span>订单编号：{{orderdata.Orderid}}</span>
+            </td>
+            <td>
+              <span>订单生成时间：{{orderdata.Time}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td><span>商品名称：{{orderdata.SaleName}}</span></td>
+            <td><span>收货地址：{{orderdata.Address}}</span></td>
+          </tr>
+          <tr>
+            <td>
+              <span>备注说明：{{orderdata.Memo}}</span>
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>收货人：{{orderdata.Realname}}</span>
+            </td>
+            <td>
+              <span>价格：{{orderdata.Price}}</span>
+            </td>
+          </tr>
+        </table>        
+      </div>
+    </div>
+  </div>
+<!-- 订单信息end -->
+<!-- 支付方式 -->
+<!-- <div style="    height: 400px;background-color: rgba(128, 128, 128, 0.23);padding: 10px;">
+  <h3 style="    ">支付方式</h3>
+  <div>
+    <button class="btn btn-info" style="margin-top: 10px;">货到付款</button>
+    <button class="btn btn-info" style="margin-top: 10px;">在线支付</button>
+    <button class="btn btn-info" style="margin-top: 10px;">分期付款</button>
+  </div>
+</div> -->
+<!-- 支付方式end -->
+<!-- 送货清单 -->
+<!-- <div>
+  <table class="table">
+   <caption style="color: red;font-size: 18px">送货清单</caption>
+   <thead>
+      <tr>
+         <th>商品名称</th>
+         <th>商品单价</th>
+         <th>数量</th>
+         <th>小计</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Sachin</td>
+         <td>{{500|currency:'￥'}}</td>
+         <td><input type="text" value="2"></td>
+         <td>{{500*2|currency:'￥'}}</td>
+         <td><button class="btn btn-warning">删除</button></td>
+      </tr>
+      <tr>
+         <td>Sachin</td>
+         <td>{{500|currency:'￥'}}</td>
+         <td><input type="text" value="2"></td>
+         <td>{{500*2|currency:'￥'}}</td>
+         <td><button class="btn btn-warning">删除</button></td>
+      </tr>
+   </tbody>
+</table>
+<div style="    text-align: right;
+    margin-right: 300px;">
+总计：{{2000|currency:'￥'}}
+<button class="btn btn-danger" ui-sref="pay">提交订单</button> -->
+<!-- 送货清单end -->
+  
+</div>
+</div>

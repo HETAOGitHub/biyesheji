@@ -1,0 +1,265 @@
+.toptitle{
+    margin-top:10px;
+    margin-bottom:-10px;
+    font-size:20px;
+}
+.toptitle a{
+    color:#97C2E1;
+}
+.toptitle a:hover{
+    color:#20699D;
+    text-decoration: none;
+}
+.toptitle span{
+    font-size:14px;
+    float:right;
+    margin-left: 5px;
+    line-height: 28px;
+}
+
+.my-container{
+    margin-bottom: 10px;
+}
+
+.my-container.middle {
+    padding: 0 15px;
+}
+
+
+.my-container.left {
+    padding: 0 5px 0 30px;
+}
+
+.my-container.right {
+    padding: 0 30px 0 5px;
+}
+
+.my-container.right .row.chart{
+    height:302px;
+}
+
+.my-container .row {
+    border: 1px solid #ddd;
+}
+.my-container .app-bg {
+    width: 146px;
+    height: 39px;
+    background: url(../assets/img/nav-bg.png);
+    float: left;
+    color:#fff;
+    font-size: 16px;
+    line-height:39px;
+}
+
+.my-container .app-bg img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.my-tab{
+    float:right;
+    line-height: 35px;;
+} 
+.my-tab ul{
+    list-style: none;
+    margin:0;
+}
+.my-tab ul li{
+    display:inline;
+    color: #000000;
+}
+.my-tab ul li div{
+    cursor:auto;
+    float: right;
+    padding:0 9px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.my-tab ul li div.active{
+    background:url(../assets/img/bg-selected.png) no-repeat bottom;
+    font-size: 16px;
+    border-bottom: 4px solid #FF7F00;
+}
+
+
+.chart{
+    border: 1px solid #ddd;
+}
+
+.text-red{
+    color: #EF4B3B;
+}
+
+hr{
+    margin-bottom: 5px!important;
+}
+
+.my-container .app-analyze{
+    color: #95959D;
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.my-container .app-analyze a{
+    color: #4AA7ED;
+}
+.my-container .app-analyze .span1{
+    font-size: 18px;
+    color: #000;
+}
+.my-container .app-analyze .span2{
+    font-size: 18px;
+    color: #FFA042;
+    margin:0 8px;
+}
+.my-container .app-analyze p{
+    margin-left: 70px;
+}
+
+.my-container #movement{
+    height:300px;
+}
+
+#bar{
+    height:400px;
+    width:800px;
+    margin:15px auto;
+    text-align: center;
+}
+
+.my-container .app-analyze-pic{
+    margin:50px auto;
+    text-align: center;
+    color:blue;
+}
+
+.my-container .app-analyze-pic img{
+    margin:auto 5px;
+}
+
+.go-to-top{
+    z-index: 800;
+    right: 0px;
+    bottom: 20px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.single-select-left{
+    float: left;
+    line-height: 34px;
+    font-size: 16px;
+}
+
+.single-select-left input {
+    border: 0;
+    background: none transparent scroll repeat 0% 0%;
+    position: absolute;
+    color: #000;
+    z-index: -1000;
+    top: 0;
+    width: 50px;
+    visibility: hidden;
+}
+
+.single-select-left table {
+    margin: 0 auto;
+}
+
+.single-select-right{
+    float: right;
+}
+
+.single-table{
+    margin-top: 3px!important;
+}
+
+/*原创学年、学期、月份选择组件有关的CSS*/
+.my-select-div{
+    text-align: center;
+    float:right;
+    /*padding: 0 0 0 180px;
+    min-width:360px;*/
+    padding: 0 0 0 100px;
+    min-width:300px;
+}
+
+.my-select-div .my-select-text{
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.my-select-div ul{
+    padding:0px;
+    width: 360px;
+    height: 285px
+}
+
+.my-select-div .my-select-div-inside .my-select-orange{
+    width:100%;
+    height:30px;
+    background-color: #FEF5DE;
+}
+
+.my-select-div .my-select-div-inside .my-select-orange img{
+    margin: auto 10px;
+}
+
+.my-select-div-inside{
+    text-align: center;
+    line-height: 30px;
+}
+
+.my-select-div-item{
+    width:80px;
+    height:30px;
+    float:left;
+    border: 1px solid #CFCFDD;
+    margin: 6px;
+    padding-left:1px;
+    padding-right:1px;
+    cursor:pointer;
+    background-color: #fff;
+}
+
+.my-select-div-item.active{
+    border: none;
+    color: #FFFFFF;
+    background-color: #ED9678;
+}
+
+.my-select-div-item:disabled{
+    /*border: none;
+    color: #FFFFFF;
+    cursor: not-allowed;*/
+    visibility: hidden;
+}
+
+.my-select-div-header{
+    line-height: 30px;
+    margin: 6px 0 12px 6px;
+}
+
+.my-select-div-left,.my-select-div-right{
+    float:left;
+    margin:0 5px;
+}
+
+.my-select-tip{
+    margin-top: 5px;
+    color: #A4A4A9;
+}
+
+.my-select-div-left{
+    width:50px;
+}
+.my-select-div-right{
+    width: 280px;
+}
+
+.my-select-div .dropdown-menu{
+    left:auto;
+    right:0!important;
+}

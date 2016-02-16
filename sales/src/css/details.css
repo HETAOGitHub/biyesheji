@@ -1,0 +1,159 @@
+﻿.divfather {
+    position: relative;
+    margin-top:10px;
+}
+
+.details-student {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.details-school {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.details-teacher{
+    position:absolute;
+    top:5px;
+    right: 0px;
+}
+
+.details-table table {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.details-table table * {
+    text-align: center;
+}
+
+.details-table thead > tr > th {
+    font-weight: normal!important;
+    border: 0px!important;
+    color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+}
+
+.details-table tbody > tr > td {
+    border-top: 0px!important;
+    border-bottom: 0px!important;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    color: #000;
+    vertical-align: middle;
+}
+
+.details-table thead > tr.tr-top {
+    font-size: 16px;
+}
+
+.details-table thead > tr.tr-top img,
+.details-tab tab-heading>div>img {
+    /*.details-tab .tab-heading>div>img与学校、教师、学生选项卡有关*/
+    
+    padding-bottom: 3px;
+    padding-right: 7px;
+}
+
+.details-table .single-row {
+    background-color: #82afd9;
+}
+
+.details-table .double-row {
+    background-color: #629cd0;
+}
+
+.details-table tbody td {}
+
+.details-table tfoot tr {}
+
+.details-table tfoot td {}
+
+.details-table tbody>tr:nth-of-type(odd) .td-style1 {
+    background-color: #e3f4fb;
+}
+
+.details-table tbody>tr:nth-of-type(odd) .td-style2 {
+    background-color: #e4eef8;
+}
+
+.details-table thead>tr>th.border>div {
+    border-right: 1px solid #5493CB;
+}
+
+.details-table tbody>tr>td:nth-of-type(1),
+.details-table thead>tr>th:nth-of-type(1) {
+    max-width: 140px;
+}
+
+.details-table thead>tr:nth-of-type(1)>th:nth-of-type(8),
+.details-table thead>tr:nth-of-type(1)>th:nth-of-type(9) {
+    max-width: 60px;
+}
+/*与学校、教师、学生选项卡有关*/
+
+.details-tab ul.nav-tabs li.active a {
+    background-color: #01aaef;
+    color: #fff;
+    border: 0!important;
+}
+
+.details-tab ul.nav-tabs li a {
+    border-radius: 0;
+    font-size: 16px;
+    color: #01aaef;
+    padding: 5px 30px;
+}
+
+.details-tab .my-select-div {
+    margin: 10px 0 0 0;
+}
+
+.details-tab .my-select-div span {
+    font-size: 14px;
+    color: #fff;
+}
+/*details ul*/
+.ul-menu{
+	height: 300px;
+	overflow: auto;
+} 
+/*details page*/
+.pageMsg,
+.page-msg{
+    float: left;
+}
+.page{
+    position: relative;
+}
+
+.page-input{
+    /*position: absolute;*/
+    width: 30px;
+    top:24px;
+    /*right:330px;*/
+}
+
+.page-button {
+    /*position: absolute;*/
+    top:22px;
+    /*right:279px;*/
+}
+
+/*要确保#bridge被page-button遮挡*/
+.page #bridge{
+    width:0;
+    height:0;
+    position: relative;
+    /*top:24px;*/
+    /*right:300px;*/
+    margin-left:-10px;
+    z-index: -1000;
+}
+
+

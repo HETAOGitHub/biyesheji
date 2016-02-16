@@ -1,0 +1,17 @@
+<div>
+	<table class="table" style="    width: 50%;
+    margin-left: 25%;">
+		<tr ng-repeat="data in initdata">
+			<td>
+				{{data.brand}}
+			</td>
+			<td>
+				{{data.brandValue}}
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="loading-div" ng-show="isLoading">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+    <p>正在加载...请耐心等待</p>
+</div>

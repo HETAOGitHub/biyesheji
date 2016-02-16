@@ -1,0 +1,169 @@
+.modal-content{
+	position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+.area-modal-header{
+	padding:15px;
+	background-color:#7EC6FA;
+	border-bottom:1px solid #7EC6FA;
+    width:100%;
+}
+.area-modal-title{
+	line-height: 1;
+	color:#FFFFFF;
+	font-size:1.4em;
+}
+.area-modal-body{
+	position: relative;
+    padding: 15px;
+    border-radius: 0px;
+    width:100%;
+}
+.cancel-bg{
+	float:right;
+	margin-top:-15px;
+	margin-right:-15px;
+} 
+.cancel-btn{
+	font-size:1.2em;
+	padding:13px;
+	color:black;
+}
+.cancel-color{
+	background-color:#0784E0;
+}
+
+
+/*全区慨况 图标 标题*/
+.map-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin:10px 0px 10px 0px;
+}
+
+/*全区概况school的样式*/
+.area-school-body{
+
+}
+
+.area-school-chart-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin:5px 0px 5px 0px;
+    margin-top:10px;
+}
+
+.area-school-box{
+    width: 100%;height:200px;
+}
+.area-school-div{
+    width: 260px;height: 200px;float: left;
+}
+.area-school-chart{
+    width: 260px;height: 200px;
+}
+
+.area-school-items{
+    width:600px;height: 200px;float: right;border-radius: 10px;-webkit-border-radius: 10px;background: #d9edf7;
+}
+
+.area-school-table{
+    width: 100%;height: 100%;text-align: left;font-size: 10px;margin-left: 5px;
+}
+
+.area-school-pageMsg{
+    color: gray;font-size: 10px;
+    float: left;padding-left: 15px;
+}
+
+.area-school-paging{
+    color: #5bc0de;font-size:25px;font-weight: bolder;float: right;padding-right: 15px;
+    -moz-user-select:none;
+}
+
+.area-school-turnPage{
+    cursor:pointer;
+    color:#5bc0de;
+}
+.area-school-turnPage2{
+    cursor:pointer;
+    color:#0000ff;
+}
+
+.area-school-totalNum{
+    color: red;
+}
+
+.area-school-type{
+    color:red;
+}
+
+/*全区概况用户的样式*/
+.area-user-box{
+    width:100%;height:360px;
+}
+
+.area-user-box1{
+    float:left;
+}
+
+.area-user-chart1{
+    width:560px;height:300px;margin-top: 18px;
+}
+
+.area-user-box2{
+    float:right;
+}
+
+.area-user-box2 label{
+font-size:16px;color:white;font-weight:normal;padding-left:30px;padding-right:30px;margin-right:0px;cursor:pointer;
+}
+
+.area-user-label1{
+    background:#2ccbb5;
+}
+
+.area-user-label2{
+    background:gray;
+}
+
+.area-user-chart2{
+    width:300px;height:300px;
+}
+
+.area-user-box3{
+    width:420px;height: 300px;float: left;
+}
+
+.area-user-box4{
+    width:420px;height: 300px;float: right;
+}
+.area-user-chart3{
+    width:430px;height: 300px;
+}
+
+.area-user-chart4{
+    width:430px;height: 300px;
+}
+
+
+/*全区概况导出按钮*/
+
+.area-export{
+    position:absolute;top:60px;right:90px;
+}
+
+/*全区慨况 图标 标题*/
+.map-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin:10px 0px 10px 0px;
+}

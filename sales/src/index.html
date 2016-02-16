@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>宝马汽车配件网上商城</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="stylesheet" href="/css/error.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/ranking.css">
+    <link rel="stylesheet" href="/css/single.css">
+    <link rel="stylesheet" href="/css/tarea.css">
+    <!-- endinject -->
+</head>
+
+<body ng-app="statis" ng-controller="mainCtrl" style="background-color: #f5f5f5;">
+    <div class="container-fluid" id="header">
+        <div class="row content">
+            <div class="logo">
+                <img src="assets/img/logo.png" />
+                <span>宝马汽车配件网上商城</span>
+                <span><a href="" ui-sref="login">【登录】</a></span>
+                <!-- <span>【注册】</span> -->
+            </div>
+            <div class="total">
+                <span><a href="" ui-sref='add' ng-show="role==2">上架商品</a></span>
+                <span><a href="" ui-sref="all" ng-show="role==2">所有订单</a></span>
+                <span><a ui-sref='home'>商城首页</a></span>
+                <span><a ui-sref='myorder' ng-show="role==1">我的订单</a></span>
+                <span><a ui-sref='shopping' ng-show="role==1">购物车</a></span>
+                <span>客户服务</span>
+
+            </div>
+            <!-- <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" ng-class="{'active':whichTab[0]}">
+                    <a ui-sref='home'>首页</a>
+                </li>
+                <li role="presentation" ng-class="{'active':whichTab[1]}">
+                    <a ui-sref='rank.school'>排名</a>
+                </li>
+                <li role="presentation" ng-class="{'active':whichTab[2]}">
+                    <a ui-sref='details.school'>详情</a>
+                </li>
+            </ul> -->
+           <!--  <ul class="nav nav-tabs nav-justified"  ng-if="isSchoolHome">
+                <li role="presentation" ng-class="{'active':whichTab[0]}">
+                    <a ui-sref="schoolHome">首页</a>
+                </li>
+                <li role="presentation" ng-class="{'active':whichTab[1]}">
+                    <a ui-sref='rank2.teacher'>排名</a>
+                </li>
+                <li role="presentation" ng-class="{'active':whichTab[2]}">
+                    <a ui-sref='details2.teacher'>详情</a>
+                </li>
+            </ul> -->
+            <div ui-view='container'></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- inject:js -->
+    <script src="/js/config.js"></script>
+    <script src="/js/module.js"></script>
+    <script src="/js/routerCtrl.js"></script>
+    <script src="/services/mainService.js"></script>
+    <script src="/coms/details/detailsCtrl.js"></script>
+    <script src="/coms/home/homeCtrl.js"></script>
+    <script src="/coms/login/login.js"></script>
+    <script src="/lib/angular-resource.min.js"></script>
+    <script src="/lib/angular-ui-router.min.js"></script>
+    <script src="/lib/bootstrap.min.js"></script>
+    <script src="/lib/highcharts-ng.js"></script>
+    <script src="/lib/highcharts.js"></script>
+    <script src="/lib/smart-table.min.js"></script>
+    <script src="/lib/ui-bootstrap-tpls-0.13.2.min.js"></script>
+    <script src="/coms/area/areaCtrl.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>

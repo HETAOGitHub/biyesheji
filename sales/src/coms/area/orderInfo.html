@@ -1,0 +1,67 @@
+<div style="    margin-top: 60px;">
+  <span style="font-size: 16px;
+    color: gray;
+">填写并核对核对订单信息</span>
+<!-- 收货人信息 -->
+<div style="    height: 200px;background-color: rgba(128, 128, 128, 0.23);padding: 10px;">
+  <h3 style="    ">收货人信息</h3>
+  <div>
+    <div style="    margin-top: 10px;">收货人：<input type="text" value="何涛" placeholder="请填写您的姓名" required></div>
+    <div style="    margin-top: 10px;">收货地址：<input type="text" placeholder="请填写您的收货地址" required></div>
+    <div style="    margin-top: 10px;">联系方式：<input type="text" placeholder="请填写您的联系方式" required></div>
+    <div style="    margin-top: 10px;">备注信息<input type="text" placeholder="请填写您的联系方式" required></div>
+
+    <!-- <div style="    margin-top: 10px;">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：<input type="text" placeholder="Email"></div> -->
+    <!-- <button class="btn" style="    margin-top: 10px;">立即购买</button>
+    <button class="btn btn-danger" style="    margin-top: 10px;" ui-sref='shopping'>加入购物车</button> -->
+
+  </div>
+</div>
+<!-- 收货人信息end -->
+<!-- 支付方式 -->
+<div style="    height: 200px;background-color: rgba(128, 128, 128, 0.23);padding: 10px;">
+  <h3 style="    ">支付方式</h3>
+  <div>
+    <button class="btn btn-info" style="margin-top: 10px;">货到付款</button>
+    <!-- <button class="btn btn-info" style="margin-top: 10px;">在线支付</button>
+    <button class="btn btn-info" style="margin-top: 10px;">分期付款</button> -->
+  </div>
+</div>
+<!-- 支付方式end -->
+<!-- 送货清单 -->
+<div>
+  <table class="table">
+   <caption style="color: red;font-size: 18px">送货清单</caption>
+   <thead>
+      <tr>
+         <th>商品名称</th>
+         <th>商品单价</th>
+         <th>数量</th>
+         <th>小计</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Sachin</td>
+         <td>{{500|currency:'￥'}}</td>
+         <td><input type="text" value="2"></td>
+         <td>{{500*2|currency:'￥'}}</td>
+         <td><button class="btn btn-warning">删除</button></td>
+      </tr>
+      <tr>
+         <td>Sachin</td>
+         <td>{{500|currency:'￥'}}</td>
+         <td><input type="text" value="2"></td>
+         <td>{{500*2|currency:'￥'}}</td>
+         <td><button class="btn btn-warning">删除</button></td>
+      </tr>
+   </tbody>
+</table>
+<div style="    text-align: right;
+    margin-right: 300px;">
+总计：{{2000|currency:'￥'}}
+<button class="btn btn-danger" ui-sref="pay">提交订单</button>
+<!-- 送货清单end -->
+  
+</div>
+</div>
