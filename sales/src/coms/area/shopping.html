@@ -1,39 +1,3 @@
-<!-- <nav class="navbar navbar-inverse" role="navigation" style="    margin-top: 150px;">
-   <div class="navbar-header">
-      <a class="navbar-brand" href="#">全部产品分类</a>
-   </div>
-   <div>
-      <ul class="nav navbar-nav">
-         <li class="active"><a ui-sref='home'>首页</a></li>
-         <li><a ui-sref='rank.detail'>排名</a></li>
-         <li dropdown>
-            <a href="#" class="dropdown-toggle" dropdown-toggle>
-               汽车用品 <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-               <li><a href="#">jmeter</a></li>
-               <li><a href="#">EJB</a></li>
-               <li><a href="#">Jasper Report</a></li>
-               <li class="divider"></li>
-               <li><a href="#">分离的链接</a></li>
-               <li class="divider"></li>
-               <li><a href="#">另一个分离的链接</a></li>
-            </ul>
-         </li>
-      </ul>
-   </div>
-</nav> -->
-<!-- <div class="col-lg-6" style="    margin-top: -140px;
-    margin-left: 280px;">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span> -->
-    <!-- </div>/input-group -->
-  <!-- </div>/.col-lg-6 -->
-<!-- </div>/.row -->
-<!-- 导航栏end -->
 <div>
   <table class="table">
    <caption style="color: red;font-size: 18px">我的购物车</caption>
@@ -48,38 +12,29 @@
       </tr>
    </thead>
    <tbody>
-      <tr>
-         <td>Sachin</td>
-         <td>{{500|currency:'￥'}}</td>
-         <td><input type="text" value="2"></td>
-         <td>{{500*2|currency:'￥'}}</td>
-         <td><button class="btn btn-warning">删除</button></td>
+      <tr ng-repeat="sale in sales">
+         <td>{{sale.name}}</td>
+         <td>{{sale.price|currency:'￥'}}</td>
+         <td style="    width: 300px;">
+           <button class="btn btn-danger" ng-click="changeNum(2,$index)">-</button>
+           <input class="form-control shooping-num-input" type="text" value="{{sale.count}}" disabled="true">
+           <button class="btn btn-danger shooping-num-button" ng-click="changeNum(1,$index)">+</button></td>
+         <td>{{sale.price*sale.count|currency:'￥'}}</td>
+         <td><button class="btn btn-warning" ng-click="deleteSales($index)">删除</button></td>
       </tr>
-      <tr>
+     <!--  <tr>
          <td>Sachin</td>
          <td>{{500|currency:'￥'}}</td>
          <td><input type="text" value="2"></td>
          <td>{{500*2|currency:'￥'}}</td>
          <td><button class="btn btn-warning">删除</button></td>
           
-      </tr>
-      <!-- <tr>
-        <td>
-          总计
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-          {{2000|currency:'￥'}}
-        </td>
       </tr> -->
    </tbody>
 </table>
 <div style="    text-align: right;
     margin-right: 300px;">
-总计：{{2000|currency:'￥'}}
+总计：{{Price|currency:'￥'}}
 <button class="btn btn-danger" ui-sref="orderInfo">去结算</button>
   
 </div>

@@ -125,16 +125,15 @@
 <div class="bs-example" data-example-id="thumbnails-with-custom-content">
     <div class="row">
       <div class="col-sm-6 col-md-4" ng-repeat="img in imgdata">
-      <a href="javascript:scroll(0,0)">
-        <div class="thumbnail" ui-sref="detail.info({infoId:img.id})" style="cursor: pointer;">
-          <img src="{{img.img}}" alt="Generic placeholder thumbnail">
+        <div class="thumbnail" style="cursor: pointer;">
+          <img src="{{img.img}}" alt="Generic placeholder thumbnail" ui-sref="detail.info({infoId:img.id})" 
+          ng-click="goToDetail(img.id)">
           <div class="caption">
-            <h3>Thumbnail label</h3>
+            <h3><p style="background-color: #C3BABA;color: #D8181C;">{{img.price|currency:'￥'}}</p></h3>
             <p>{{img.descripts}}</p>
-            <p><a href="#" class="btn btn-primary" role="button">加入收藏</a> <a href="#" class="btn btn-danger" role="button">加入购物车</a></p>
+            <!-- <p><a href="#" class="btn btn-primary" role="button">加入收藏</a> <a href="#" class="btn btn-danger" role="button" ng-click="addToCar(img.id)">加入购物车</a></p> -->
           </div>
         </div>
-      </a>
       </div>
     </div>
   </div>

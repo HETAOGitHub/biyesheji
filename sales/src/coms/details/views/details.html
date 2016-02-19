@@ -29,7 +29,7 @@
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search for...">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
+                <button class="btn btn-default" type="button">搜索</button>
               </span>
             </div><!-- /input-group -->
           </div><!-- /.col-lg-6 -->
@@ -38,24 +38,43 @@
     <!-- 商品详情 -->
         <div style="height: 400px;">
             <div class="div400px3">
-            <img src="/assets/4.png" alt="" style="width: 380px;
+            <img src="{{detailsDate.img}}" alt="" style="width: 380px;
             height: 300px;">
             </div>
             <div>
-                <h3>宝马方向盘宝马方向盘宝马方向盘宝马方向盘宝马方向盘</h3>
-                <div style="background-color: rgba(70, 70, 70, 0.27);">
-                <span style="font-size: 16px">市场价:{{600|currency:'￥'}}</span><br><br>
+                <h3>{{detailsDate.name}}</h3>
+                <div style="background-color: rgba(70, 70, 70, 0.27);width: 500px;margin-left: 360px;">
+                <span style="font-size: 16px">市场价:{{detailsDate.price|currency:'￥'}}</span><br><br>
 
-                <span style="font-size: 16px">零售价：<span style="color: #eb6100;">{{500|currency:'￥'}}</span></span>
+                <span style="font-size: 16px">零售价：<span style="color: #eb6100;">{{detailsDate.salePrice|currency:'￥'}}</span></span>
                 </div>
                 <div style="    padding-top: 25px;">
-                    <div style="    margin-top: 10px;">商品编码：0000001</div>
-                    <div style="    margin-top: 10px;">发货地址：广东省番禺区外环东路</div>
-                    <div style="    margin-top: 10px;">送&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到：<input type="text" placeholder="Email"></div>
-                    <div style="    margin-top: 10px;">运送方式：<input type="text" placeholder="Email"></div>
-                    <div style="    margin-top: 10px;">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：<input type="text" placeholder="Email"></div>
-                    <button class="btn" style="    margin-top: 10px;">立即购买</button>
-                    <button class="btn btn-danger" style="    margin-top: 10px;" ui-sref='shopping'>加入购物车</button>
+                    <div style="    margin-top: 10px;">商品编码：{{detailsDate.saleId}}</div>
+                    <div style="    margin-top: 10px;">发货地址：{{detailsDate.address}}</div>
+                    <!-- <div style="    margin-top: 10px;">
+                      送&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到：
+                      <input type="text" class="input-style" ng-model="ShippingAddress" placeholder="请输入收货地址，例如：揭阳市揭西县五经富镇下油坊">
+                    </div> -->
+                    <div style="    margin-top: 10px;">
+                      运送方式：
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          {{!!tranMode?tranMode:'快递运输'}} <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li ng-repeat="tm in tranModes" ng-click="changeTranMode(tm)">
+                            <p class="mouse-hand" style="padding: 3px;">{{tm}}</p>
+                              <hr style="margin-top: -10px;">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                      数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：
+                      <button class="btn" ng-click="changNum(2)">-</button><input type="text" class="input-style" ng-model="saleNum" style="width: 50px;"><button class="btn" ng-click="changNum(1)">+</button>
+                      </div>
+                    <button class="btn" style="margin-top: 10px;">立即购买</button>
+                    <button class="btn btn-danger" style="margin-top: 10px;" ng-click="addToCar()">加入购物车</button>
                 </div>
             </div>
         </div>

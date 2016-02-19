@@ -79,7 +79,7 @@ var app = angular.module('statis', ['ui.router', 'ui.bootstrap', "highcharts-ng"
                 views: {
                     'container': {
                         templateUrl: "coms/area/shopping.html",
-                        controller: 'detailsCtrl'
+                        controller: 'shoppingCtrl'
                     }
                 }
             })
@@ -88,8 +88,8 @@ var app = angular.module('statis', ['ui.router', 'ui.bootstrap', "highcharts-ng"
                 url: "/orderInfo",
                 views: {
                     'container': {
-                        templateUrl: "coms/area/orderInfo.html",
-                        controller: 'detailsCtrl'
+                        templateUrl: "coms/order/orderInfo.html",
+                        controller: 'orderCtrl'
                     }
                 }
             })
@@ -98,8 +98,8 @@ var app = angular.module('statis', ['ui.router', 'ui.bootstrap', "highcharts-ng"
                 url: "/pay",
                 views: {
                     'container': {
-                        templateUrl: "coms/area/pay.html",
-                        controller: 'detailsCtrl'
+                        templateUrl: "coms/order/pay.html",
+                        controller: 'orderCtrl'
                     }
                 }
             })
@@ -108,8 +108,8 @@ var app = angular.module('statis', ['ui.router', 'ui.bootstrap', "highcharts-ng"
                 url: "/success",
                 views: {
                     'container': {
-                        templateUrl: "coms/area/success.html",
-                        controller: 'detailsCtrl'
+                        templateUrl: "coms/order/success.html",
+                        controller: 'orderCtrl'
                     }
                 }
             })
@@ -117,8 +117,8 @@ var app = angular.module('statis', ['ui.router', 'ui.bootstrap', "highcharts-ng"
                 url: "/myorder",
                 views: {
                     'container': {
-                        templateUrl: "coms/area/myorders.html",
-                        controller: 'detailsCtrl'
+                        templateUrl: "coms/order/myorders.html",
+                        controller: 'orderCtrl'
                     }
                 }
             })
@@ -144,7 +144,7 @@ var app = angular.module('statis', ['ui.router', 'ui.bootstrap', "highcharts-ng"
                 url:"/all",
                 views:{
                     'container':{
-                        templateUrl:"coms/area/allorders.html",
+                        templateUrl:"coms/order/allorders.html",
                         controller:'areaCtrl'
                     }
                 }

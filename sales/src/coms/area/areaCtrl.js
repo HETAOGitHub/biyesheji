@@ -1,43 +1,14 @@
-app.controller('areaCtrl', ['$scope', '$state', '$modal',
-        function($scope, $state, $modal) {
+app.controller('areaCtrl', ['$scope', '$state', '$modal','initData',
+        function($scope, $state, $modal,initData) {
 
-             $scope.orderdatas=[{Id:001,Orderid:0663987123456,
-            Userid:01,Realname:"何涛",SaleName:"安全椅,方向盘把套",
-            Address:"广东省番禺区外环东路",Zipcode:515429,
-            Tel:"13570577038",Payment:'在线支付',
-            Email:"1019872217@qq.com","Memo":"注意安全",
-            tag:"1",Price:"200",Time:"2015/5/22 9:38:29"},
-            {Id:001,Orderid:0663987123456,
-            Userid:01,Realname:"何涛",SaleName:"安全椅,方向盘把套",
-            Address:"广东省番禺区外环东路",Zipcode:515429,
-            Tel:"13570577038",Payment:'在线支付',
-            Email:"1019872217@qq.com","Memo":"注意安全",
-            tag:"1",Price:"200",Time:"2015/5/22 9:38:29"},
-            {Id:001,Orderid:0663987123456,
-            Userid:01,Realname:"何涛",SaleName:"安全椅,方向盘把套",
-            Address:"广东省番禺区外环东路",Zipcode:515429,
-            Tel:"13570577038",Payment:'在线支付',
-            Email:"1019872217@qq.com","Memo":"注意安全",
-            tag:"1",Price:"200",Time:"2015/5/22 9:38:29"},
-            {Id:001,Orderid:0663987123456,
-            Userid:01,Realname:"何涛",SaleName:"安全椅,方向盘把套",
-            Address:"广东省番禺区外环东路",Zipcode:515429,
-            Tel:"13570577038",Payment:'在线支付',
-            Email:"1019872217@qq.com","Memo":"注意安全",
-            tag:"1",Price:"200",Time:"2015/5/22 9:38:29"},
-            {Id:001,Orderid:0663987123456,
-            Userid:01,Realname:"何涛",SaleName:"安全椅,方向盘把套",
-            Address:"广东省番禺区外环东路",Zipcode:515429,
-            Tel:"13570577038",Payment:'在线支付',
-            Email:"1019872217@qq.com","Memo":"注意安全",
-            tag:"1",Price:"200",Time:"2015/5/22 9:38:29"}];
+             $scope.orderdatas=initData.orderdatas;
 
             $scope.candisable=[true,true,true,true,true,true,true,true,true,true];
             $scope.change=function(index){
                 console.log(index);
                 $scope.candisable[index]=false;
             }
-
+            //清空数据
             $scope.initData=function(){
                 $scope.saleName=''
                 $scope.saleType='';
@@ -49,6 +20,7 @@ app.controller('areaCtrl', ['$scope', '$state', '$modal',
                 $scope.saleImg='';
             }
             $scope.initData();
+
             $scope.typeDate=[
                 {name:"火花塞",id:1},
                 {name:"后视镜",id:2},
@@ -67,7 +39,8 @@ app.controller('areaCtrl', ['$scope', '$state', '$modal',
             $scope.add=function(){
             var str=document.getElementById("inputfile").value;
             var arr=str.split('\\');//注split可以用字符或字符串分割 
-            $scope.saleImg="D:/bysj/"+arr[arr.length-1];//这就是要取得的图片名称 
+            $scope.sale=[];
+            $scope.saleImg="assets/"+arr[arr.length-1];//这就是要取得的图片名称 
                 console.log($scope.saleName);
                 console.log($scope.saleType);
                 console.log($scope.price);
@@ -75,8 +48,19 @@ app.controller('areaCtrl', ['$scope', '$state', '$modal',
                 console.log($scope.count);
                 console.log($scope.descripts);
                 console.log($scope.saleImg);
-
-
+                $scope.sale.name=$scope.saleName;
+                $scope.sale.lbId=$scope.saleTypeId;
+                $scope.sale.id='5664';
+                $scope.sale.Salecount=$scope.count;
+                $scope.sale.price=$scope.price;
+                $scope.sale.address='广东省番禺区外环东路';
+                $scope.sale.salePrice=$scope.price*($scope.cutPrice/10);
+                $scope.sale.img=$scope.saleImg;
+                $scope.sale.descripts=$scope.descripts;
+                $scope.sale.img=$scope.saleImg;
+                $scope.sale.Saledate='2016-2-17'
+                console.log($scope.sale);
+                initData.imgdata1.push($scope.sale);
             }
 
 

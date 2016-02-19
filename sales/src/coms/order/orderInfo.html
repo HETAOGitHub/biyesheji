@@ -9,7 +9,7 @@
     <div style="    margin-top: 10px;">收货人：<input type="text" value="何涛" placeholder="请填写您的姓名" required></div>
     <div style="    margin-top: 10px;">收货地址：<input type="text" placeholder="请填写您的收货地址" required></div>
     <div style="    margin-top: 10px;">联系方式：<input type="text" placeholder="请填写您的联系方式" required></div>
-    <div style="    margin-top: 10px;">备注信息<input type="text" placeholder="请填写您的联系方式" required></div>
+    <div style="    margin-top: 10px;">备注信息<input type="text" placeholder="请填写您的备注信息" required></div>
 
     <!-- <div style="    margin-top: 10px;">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：<input type="text" placeholder="Email"></div> -->
     <!-- <button class="btn" style="    margin-top: 10px;">立即购买</button>
@@ -41,18 +41,11 @@
       </tr>
    </thead>
    <tbody>
-      <tr>
-         <td>Sachin</td>
-         <td>{{500|currency:'￥'}}</td>
-         <td><input type="text" value="2"></td>
-         <td>{{500*2|currency:'￥'}}</td>
-         <td><button class="btn btn-warning">删除</button></td>
-      </tr>
-      <tr>
-         <td>Sachin</td>
-         <td>{{500|currency:'￥'}}</td>
-         <td><input type="text" value="2"></td>
-         <td>{{500*2|currency:'￥'}}</td>
+      <tr ng-repeat="sale in sales">
+         <td>{{sale.name}}</td>
+         <td>{{sale.salePrice|currency:'￥'}}</td>
+         <td><input type="text" value="{{sale.count}}"></td>
+         <td>{{sale.salePrice*sale.count|currency:'￥'}}</td>
          <td><button class="btn btn-warning">删除</button></td>
       </tr>
    </tbody>
